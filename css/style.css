@@ -146,6 +146,129 @@ header nav ul li a:hover
     margin-bottom:75px; 
 }
 
+.sub-heading:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    -webkit-transition:0.3s ease;
+    -moz-transition:0.3s ease;
+    -ms-transition:0.3s ease;
+    -o-transition:0.3s ease;
+    transition:0.3s ease;
+}
+
+.sub-heading:hover:before
+{
+    width: 24%;
+    margin-left: -12px;
+}
+
+.sub-heading:after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p
+{
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block
+{
+    position: relative;
+    background: #f7f7f7;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover,.intro-block.active
+{
+    background: #0AABE1;
+}
+
+.intro-block:hover
+{
+    -webkit-transition:0.6s ease;
+    -moz-transition:0.6s ease;
+    -ms-transition:0.6s ease;
+    -o-transition:0.6s ease;
+    transition:0.6s ease;
+}
+
+.intro-block .intro-icon
+{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fa
+{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCEEF0;
+}
+
+.intro-block:hover .fa, .intro-block.active .fa
+{
+    background-color: white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3
+{
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro-block p
+{
+    color: #505050;
+}
+
+.intro-block:hover h3, .intro-block:hover p
+{
+    color: #f6f6f6;
+}
+
+
+
+
+
+
+
+
+
 
 
 
