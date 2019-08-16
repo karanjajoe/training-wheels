@@ -6,11 +6,11 @@ jQuery(document).ready(function(){
         width:'100%',
         circular:true,
         scroll:{
-                items:'1',
-                duration:500,
+                items:1,
+                duration:700,
                 pauseOnHover:true
         },
-        auto:tru,
+        auto:true,
         items:
         {
             visible:{
@@ -24,4 +24,13 @@ jQuery(document).ready(function(){
             anchorBuilder:false
         }
     });
-})
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top>=80){
+            $("header").addClass('secondary');
+        }
+        else if($("header").hasClass('secondary')){
+                $("header").removeClass('secondary');
+                }
+    })
+});
